@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level*/
+
+            display: inline;
+            background-color: lightgrey;
+            /*
+            Se eu colocar o display com inline, como está acima, eu não posso colocar medidas height e width.
+            height: 300px;
+            width: 300px; 
+            */
+
+           /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray ;
+            */
+
+            border: 10px solid darkslategray;
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px 10px 10px 10px;
+            */
+
+            padding: 10px; /* se as medidas forem iguais basta colocar so uma. */
+            
+
+            /* margin: auto; */
+          
+            /*
+            margin-top: 10px;
+            margin-right: 1opx;
+            margin-bottom: 40px;
+            margin-left: 10px;
+
+             margin: 10px 10px 40px 10px; //Simplificando o de cima
+            */
+
+            margin: 10px auto 10px auto;
+
+           
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+
+            outline: 10px dashed salmon;
+           
+        }
+
+        a { /*inline- level*/
+
+            display: block; /*Posso colocar o linl como bloco através do display:block; */
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos tembém são exemplos de box-level, mas os <a href="#">links são exepmlos de caixas inline-level.</a>Vamos ver como isso tudo funciona.</p>
+</body>
+</html>

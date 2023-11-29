@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserido vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+     <!-- <video src="midia/MeuvideoMenor.Mp4" width="500" autoplay controls loop></video> Forma mais simples de se colocar um vídeo no site. Contudo não da pra colocar outras versões, se não fica um aparecendo depois do outro. -->
+     <video width="500" poster="imagens/limoes-capa.png" controls autoplay>
+        <source src="midia/MeuvideoMenor.Mp4" type="video/mp4"> <!--Obs: sempre colocar o type. Tem nos pdfs deste curso e no site IANA-->
+        <source src="midia/MeuvideoMenor.webm" type="video/webm">
+        <source src="midia/MeuvideoMenor.mkv" type="video/mp4">
+        <source src="midia/meuvideo.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo.</p>
+     </video>
+     
+     <h1>Inserindo vídeos do YouTube</h1>
+     <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=YoacWHYrD64sepj7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     
+     <h1>Inserindo video do Vimeo - Versão paga</h1>
+     <iframe src="https://player.vimeo.com/video/455901369?h=0565a49c30" width="500" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

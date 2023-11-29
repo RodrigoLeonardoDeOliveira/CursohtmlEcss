@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            
+            /*
+            Medidas absolutas:
+             cm, mm, in, *px*, pt, pc
+
+             Medidas relativas:
+             *em*, ex, rem, vw, vh, %
+             16px geralmente é = 1em
+
+             font-weight:  ; Quer dizer o peso da fonte. Pesos literais: lighter, normal, bold, bolder. Tem a variação númerica que vai de 100 a 900.
+
+             font-style: italic;
+
+             text-decoration:underline;
+            */
+        }
+        
+        h1{
+           /*
+           font-family:Arial, Helvetica, sans-serif;
+           font-weight: 900;
+           font-size: 3em;
+           font-style: italic;
+           */
+
+           /* 
+           Shorthand font: Irá condensar todas essas chamadas acima
+           font-style -> font- weight -> font-size -> font-family
+           */
+           font: italic bolder 3em 'Arial';
+        }
+        h2 {
+            font: normal 2em 'Arial';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae corporis praesentium natus dolorum eos eligendi aspernatur reprehenderit eveniet nesciunt qui consectetur illo nostrum possimus quasi blanditiis, tenetur, ab dicta.</p>
+    <h2>Subtitulos do execício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sequi magnam tempore maxime error, alias exercitationem corporis repellat facere commodi harum velit voluptatibus fugit saepe enim, consectetur inventore architecto sapiente.</p>
+</body>
+</html>

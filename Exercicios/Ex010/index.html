@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando links externos</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no git</a></p>
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_blank" rel="external"> Canal gratuito no YouTube.</a></p>
+    <h1>Usando links internos</h1>
+    <p>Está é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página.</a></p> <!--Ctrl + espaço - aparece a página a ser selecionada no href.
+    rel next quer dizer referencia a próxima página. Está dizendo ao navegador que a próxima página é neste caso a pag002.-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self">página de notícias</a></p> <!--Ctrl + espaço para selecionar a pasta e o arquibo HTML no href
+    Target self -  Ao invés de direcionar a página que está no link para outra página como no "blank", o "self" direciona para a própria página.-->
+    <h1>Links para downloads</h1>  
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar arquivo PDF</a></li>
+        <li><a href="livro/logo-cssFull.png" download="logo-cssFull.png" type="image/png">Foto paisagem</a></li>
+    </ul> 
+    <!--site iana.ogr/assignments/media-types = para saber o que escrever dentro do atributo type de uma âncora de hypertext. Está no PDF 10 - ligaçoes em toda parte -->
+</body>
+</html>

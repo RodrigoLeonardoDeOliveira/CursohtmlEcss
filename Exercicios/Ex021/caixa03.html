@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 {
+            border: 20px solid transparent; /*Tem que existir uma borda para segurar a border-image. A borda neste exemplo da borda pode ser colorida ou transparente.*/
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 20;
+            border-image-repeat: repeat; /* opção de colocar stretch */
+
+            /*ShortHandas: border- image: url('borda.png') 27 repeat */
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>
