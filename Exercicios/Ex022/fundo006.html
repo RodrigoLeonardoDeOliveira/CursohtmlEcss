@@ -3,25 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
+            
             height: 100vh; /*100% da viewport- da tela*/
+
+            /*
+            Shorthand - background 
+                color > image > position > repeat > [size] > attachment
+
+                O background ficaria desta forma entãoverflow: 
+                 
+            background: black url('Imagens/wallpaper002.jpg') center center no-repeat cover fixed; 
+
+            /*
+            Obs: No shortand do background, no que se refere ao background- size ou na referência de size, se continuar com a declaração cover a imagem some, tirar o cover a imagem permanece no site.
+            */
+
+            background: black url('Imagens/wallpaper002.jpg') center center no-repeat fixed; 
+            background-size: cover;
+
+            /* 
             background-color: black;
             background-image: url('Imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover; /*Com o cover a imagem vai se adaptando conforme o tamanho da tela, mostrando a imagem conforme a tela está.*/
             /*
+            background-attachment: fixed;
+            /*
             background-size: auto;
              background-size: contain;
-            background-size: 100% 100%;*/
+            background-size: 100% 100%;
+            */
 
+           
+               
+                
         }
 
         main {
             background-color: white;
             width: 400px;
+            max-width: 700px;
+            /*max-width: 700px;*/
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -32,6 +58,18 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non est repudiandae hic, voluptates inventore minus fugiat atque at iusto reiciendis numquam aperiam, illo veritatis recusandae quos eveniet sapiente possimus.</p>
     </main>
 </body>
