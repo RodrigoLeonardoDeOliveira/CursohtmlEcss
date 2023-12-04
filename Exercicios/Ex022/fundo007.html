@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url('Imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative; /*O posicionamento relativo já é padrão do elemento.*/
+            height: 96vh;
+            /*height: 500px;*/
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url('Imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute; /*Com o posirion absolute pode-se colocar o left e top neste caso ao #conteudo, que é o bloco amarelo, no qual ele é movimentado em relação ao #container, que é o bloco roxo.*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            margin: auto;
+
+            left: 50%; /*Neste caso do left e do top foi utilizado com porcentagem, mas pode se usa px se for necessário.*/
+            top: 50%;
+
+            transform: translate(-50%, -50%); /*Serve para movimentar o elemento conforme a intensão que se quer para posicioná-lo.*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
