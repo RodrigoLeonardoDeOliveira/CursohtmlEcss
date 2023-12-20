@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 300px;
+            display: block; /*Display block foi usado pq a tag iframe por padrão é in-line. Para centralizar o iframe na página com o margin:auto, deve-se usar o display-block.*/
+            margin: auto;
+        }
+
+        /*Obs: No caso da tabela é melhor fazer conforme os Ex023 tabela006.html, com a div, devido aos mecanismos de buscas que possuem um problema de indexação com o iframe. */
+    </style>
+</head>
+<body>
+    <h1>Teste com iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit pariatur error vitae magni, nemo quod quaerat illo enim animi ut exercitationem ad accusamus saepe fuga neque adipisci eius magnam in?</p>
+
+    <iframe src="paginas-extras/pagina001.html" frameborder="0" height="500" width="500">
+
+        <p class="erro">Infelismente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat doloribus corrupti id quod iste hic voluptatibus possimus voluptas quos sint cumque accusantium tempore saepe aperiam dignissimos sit, molestiae natus ratione!</p>
+</body>
+</html>
