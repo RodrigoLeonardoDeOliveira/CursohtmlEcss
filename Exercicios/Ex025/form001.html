@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+   <style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post"> <!--Essa declaração de autocomplete=off serve para desligar os dados que aparecem nos campos, como nome entre outros que já foram escritos antes.-->
+        <p><label for="inome">Nome:</label> 
+            <!--No for será colocado o id, neste caso o inome ou o isobrenome-->
+            <input type="text" name="Nome" id="inome"></p> <!--Diferença entre name e id: o name émais util para o php e o id é mais útil para o javascript -->
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="nome" id="isobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+<!--O método (method, que está na tag form) por padrão que se utiliza no html para envio de dados é o método GET. Posso usar o metodo POST, colocando na declaração method 
+Obs: Tanto no método GET, que aparece na URL os dados do cadastro, quanto no metodo POST, as informações não ficam seguras. No método POST, se eu abrir o devtool, ir em network, eu consigo visualizar os dados digitados nos campos dos formulários.
+Usa-se o metodo GET quando os dados do cliente não for sensível como senhas neste caso.Quando se quer que a URL seja compartilhável, também tem que se usar o metódo GET. Quando se envia dados por GET só pode enviar até 3000 bytes. Não pode usar o metódo GET também para envio de arquivos, como fotos e vídeos. Nestes casos anteriores usa-se o metódo POST.
+-->
