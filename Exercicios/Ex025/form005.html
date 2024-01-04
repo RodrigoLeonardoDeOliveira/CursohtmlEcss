@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="isxmas" value="M">
+                <label for="isxmas">Masculino</label>
+
+                <input type="radio" name="sexo" id="isfem" value="F" checked>
+                <label for="isfem">Feminino</label>
+                <!--Para que o botão de marcar qual sexo funcione, deve-se ter o mesmo "name", neste caso, o que está escrito sexo.
+                obs: Esta opção só vale para o input:radio, NÂO vale para outros, como o checkbox abaixo.
+                obs: o value acima, serve para descriminar na URL o que foi marcado, aparecendo neste caso o M, se masculino ou F, se feminino.    
+                -->
+            </fieldset>
+            <fieldset>
+                <legend>Esportes favoritos</legend>
+                <input type="checkbox" name="esfut" id="iesfut" checked> <!--A declaração checked é para já deixar marcado o botão. Obs: neste caso serve para o input:radio também, contudo no radio só se consegue colocar marcado em somente um e no checkbox pode- se colocar em mais de um.
+                -->
+                <label for="iesfut">Futebol</label> <br>
+                
+                <input type="checkbox" name="esbas" id="iesbas">
+                <label for="iesbas">Basquetebol</label> <br> 
+                
+                <input type="checkbox" name="esnat" id="iesnat">
+                <label for="iesnat">Natação</label> <br>
+                
+                <input type="checkbox" name="esten" id="iesten">
+                <label for="iesten">Tênis</label> <br>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+</body>
+</html>
