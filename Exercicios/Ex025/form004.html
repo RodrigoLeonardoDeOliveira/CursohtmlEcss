@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <p>
+       <label for="iemail">E-mail</label> 
+       <input type="email" name="email" id="iemail" autocomplete="email" required>
+    </p>
+    <p>
+        <label for="itel">Telefone</label>
+        <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx" required>
+        <!--Estudar mais sobre RegEx, expressões regulares.. O pattern acima é uma espécie de expressão regular para telefone, onde obriga seguir o padrão para ser aceito na caixa.. Pode ser colocado entre contra-barras como acima ou entre colchetes "^[0-9]{4}-[0-9]{4}$"-->
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>
+</body>
+</html>
