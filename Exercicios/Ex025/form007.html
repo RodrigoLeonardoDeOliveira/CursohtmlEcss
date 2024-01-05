@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label> <!--Este label é elemento-->
+            <select name="Estado" id="iest">
+                <optgroup label="Região Sudeste"> <!--Este label é atributo-->
+                    <option value="" selected>--- Escolha ---</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="Prof" id="iprof" list="lstprof"> <!--Para aparecer as profisssões na caixa de texto, deve se colocar o id no datalist e o atributo de list no input:text, o que lincará o datalist e o input:text.
+            OBS: o datalist, não precisa ter name.
+            OBS: Se eu quiser que apareça somente o nome da profissão, devo tirar o value, de acordo com o exemplo abaixo.
+            OBS: A diferença entre o optgroup e o datalist é que no optgroup as opções previstas nele são fixas, não podendo ser acrescentada mais nenhuma. Já na datalist pode-se escolher as opções já previstas ou pode- se escrever, caso não tenha, e quando for procurar futuramente ela aparecerá como sugestão, sendo esta do prórpio usuário.. ATENÇÃO: A sugestção aparecerá somente para o próprio usuário e não para outros, EX: Se o usuário colocar cozinheiro, na hipótese de não ter como opção, esta aparecera novamente para ele quando for necessário selecionar a opção de cozinheiro, mas não aparecerá para outros usuários.
+            -->
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui!"></textarea> <!--cols quer dizer que após digitar 30 letras, a linha irá quebrar para a próxima em baixo. ja no rows não possui limite no caso do textarea, pode-se digitar o quanto quiser
+            OBS: Assim como quando usar o input:file, no textarea deve-se usar o method post, devido aos 3000bytes que podem ser ultrapassados no method get, não tendo este problema no method post.
+            -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
