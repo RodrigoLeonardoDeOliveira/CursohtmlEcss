@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*Estilo para telas*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: lightgray;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul {
+    list-style-type: none; /*Tira o circulo que fica antes na lista do ul*/
+}
+
+menu li {
+    background-color: darkgray;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+article {
+    width: 600px;
+    display: block; /*O texto fica em bloco, com isso é possível centralizá- lo através do margin: auto, ficando, desta forma, adaptável a outros dispositivos */
+    margin: auto;
+}
