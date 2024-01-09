@@ -1,0 +1,45 @@
+/*Declarações gerais*/
+
+@media all {
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #1526a7;
+        background-size: cover; /*OBS: Na hora que abre o exercicio no navegador, se o background estiver como contain as imagens não cobriram toda a tela, deixando frestas nos lados. Se colocar como cover, ela preencherá de forma correta e com as configurações no css retrato e paisagem de background-position ela se adaptara aos formatos de tela.*/ 
+        background-repeat: no-repeat;
+    }
+    
+    h1 {
+        color: white;
+        text-shadow: 2px 2px 0px #0e1868;
+        padding: 10px;
+    }
+    
+}
+
+
+/*Declarações retrato*/
+
+@media screen and (orientation: portrait) {
+    body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+    /*background-color: darkgreen;*/
+}
+}
+
+/*Declarações paisagem*/
+
+@media screen and (orientation: landscape) {
+    body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+    /*background-color: darkred;*/
+}
+}
